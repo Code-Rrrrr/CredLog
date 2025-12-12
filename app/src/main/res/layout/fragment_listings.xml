@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F9FAFB"
     tools:context=".ui.fragments.ListingsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -14,7 +13,6 @@
         android:clipToPadding="false"
         android:paddingTop="1dp"
         android:paddingBottom="8dp"
-        tools:listitem="@layout/recycler_item"
-        android:background="@color/background"/>
+        tools:listitem="@layout/recycler_item"/>
 
 </FrameLayout>

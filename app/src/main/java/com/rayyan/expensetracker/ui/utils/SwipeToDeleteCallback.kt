@@ -50,7 +50,7 @@ class SwipeToDeleteCallback(
             super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
             return
         }
-        // Draw red background
+
         background.setBounds(
             itemView.right + dX.toInt(),
             itemView.top,
@@ -58,7 +58,8 @@ class SwipeToDeleteCallback(
             itemView.bottom
         )
         background.draw(c)
-        // Draw delete icon
+
+
         deleteIcon?.let {
             val iconTop = itemView.top + (itemView.height - it.intrinsicHeight) / 2
             val iconBottom = iconTop + it.intrinsicHeight

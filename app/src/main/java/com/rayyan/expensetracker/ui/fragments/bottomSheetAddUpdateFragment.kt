@@ -52,7 +52,6 @@ class bottomSheetAddUpdateFragment : BottomSheetDialogFragment() {
         binding = FragmentBottomSheetAddUpdateBinding.inflate(inflater, container, false)
         viewmodel = ViewModelProvider(requireActivity())[myViewModel::class.java]
         binding.lifecycleOwner = viewLifecycleOwner
-        binding.transaction = transactionToBeUpdated
         return binding.root
     }
 
@@ -118,24 +117,22 @@ class bottomSheetAddUpdateFragment : BottomSheetDialogFragment() {
     private fun populateFields() {
         transactionToBeUpdated?.let { existing ->
             binding.apply {
-                etTitle.setText(existing.title)
-                etNote.setText(existing.note)
-                etAmount.setText(existing.amount.toString())
 
-                // Setting type
+                val titleText = existing.title ?: ""
+                etTitle.setText(titleText)
+
+                val noteText = existing.note ?: ""
+                etNote.setText(noteText)
+
+                val amountText = existing.amount?.toString() ?: ""
+                etAmount.setText(amountText)
+
                 selectedType = existing.type
                 updateTypeButton(isExpense = existing.type.equals("expense", ignoreCase = true))
-
-                // Setting category
-                val categoryIndex = categoryList.indexOfFirst {
-                    it.equals(existing.category, ignoreCase = true)
-                }
-                if (categoryIndex >= 0) {
-                    spinnerCategory.setSelection(categoryIndex)
-                }
             }
         }
     }
+
 
     private fun setupSaveButton() {
         binding.btnSave.setOnClickListener {
