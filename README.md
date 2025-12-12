@@ -40,14 +40,13 @@ app/
 
 ### Clone the project
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git ```
-
+git clone https://github.com/<your-username>/<repo-name>.git
+```
 Open the project in Android Studio, let Gradle sync, and run on any device/emulator.
 
-Easy to extend with new features (budgets, charts, etc.)
-
 📸 Screenshots
-(Add your screenshots later here.)
+
+---
 
 📄 License
 This project is licensed under the MIT License.
