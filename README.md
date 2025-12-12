@@ -30,13 +30,13 @@ Built using **Kotlin**, **MVVM**, and **Room**, featuring a smooth and modern **
 
 
 ##  Project Structure
-
+```
 app/
 ├── data/ # Room entities, DAO, repository
 ├── ui/ # Activities, adapters, viewmodels, fragments
 ├── utils/ # Helper classes
 └── res/ # Layouts, drawables, themes
-
+```
 ---
 
 
