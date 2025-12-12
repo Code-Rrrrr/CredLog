@@ -5,6 +5,7 @@ Built using **Kotlin**, **MVVM**, and **Room**, featuring a smooth and modern **
 
 ---
 
+
 ## Features
 
 - Add, edit, and delete expenses  
@@ -16,6 +17,7 @@ Built using **Kotlin**, **MVVM**, and **Room**, featuring a smooth and modern **
 
 ---
 
+
 ## Tech Stack
 
 - **Kotlin**
@@ -25,6 +27,7 @@ Built using **Kotlin**, **MVVM**, and **Room**, featuring a smooth and modern **
 - **Material Components**
 
 ---
+
 
 ##  Project Structure
 
@@ -36,15 +39,19 @@ app/
 
 ---
 
+
 ##  Getting Started
 
 ### Clone the project
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/Code-Rrrrr/CredLog.git
 ```
 Open the project in Android Studio, let Gradle sync, and run on any device/emulator.
 
-📸 Screenshots
+---
+
+
+## Screenshots
 
 ---
 
