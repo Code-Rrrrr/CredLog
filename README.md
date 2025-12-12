@@ -1,5 +1,4 @@
-# CredLog
-## A minimal expense tracking app built with Kotlin & clean architecture.
+# CredLog ### A minimal expense tracking app built with Kotlin & clean architecture.
 
 A clean and lightweight Android app to track daily expenses with ease.  
 Built using **Kotlin**, **MVVM**, and **Room**, featuring a smooth and modern **Material Design** UI.
