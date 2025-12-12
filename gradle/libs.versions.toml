@@ -1,0 +1,48 @@
+[versions]
+agp = "8.5.2"
+coreSplashscreen = "1.2.0"
+kotlin = "2.0.0"
+ksp = "2.0.0-1.0.24"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+mpandroidchart = "v3.1.0"
+room = "2.6.1"
+coroutine = "1.8.1"
+lifecycle = "2.8.4"
+activity = "1.9.1"
+constraintlayout = "2.1.4"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+#room libraries
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room"}
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room"}
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room"}
+
+#coroutine libraries
+coroutine-main = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref= "coroutine"}
+coroutine-android = { group = "org.jetbrains.kotlinx", name="kotlinx-coroutines-android", version.ref = "coroutine" }
+
+#lifecycle
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle"}
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle"}
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle"}
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
