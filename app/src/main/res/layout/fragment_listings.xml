@@ -14,5 +14,4 @@
         android:paddingTop="1dp"
         android:paddingBottom="8dp"
         tools:listitem="@layout/recycler_item"/>
-
 </FrameLayout>
